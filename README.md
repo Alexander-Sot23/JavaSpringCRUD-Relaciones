@@ -140,7 +140,7 @@ Permite crear un nuevo objeto coach en la base de datos. Formato del cuerpo de l
     "lastName": "Martinez",
     "mail": "carlos@powerfitness.com",
     "specialty": "Crossfit",
-  }
+}
 ```
 El ID se generará automáticamente, por lo que no es necesario ingresar un ID desde el JSON.
 - Responses:
@@ -156,7 +156,7 @@ Ejemplo: `/api/coach/1`
     "lastName": "Martinez",
     "mail": "carlos@powerfitness.com",
     "specialty": "Crossfit"
-  }
+}
 ```
 El ID se generará automáticamente, por lo que no es necesario ingresar un ID desde el JSON.
 - Responses:
