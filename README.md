@@ -69,18 +69,20 @@ El ID se generará automáticamente, por lo que no es necesario ingresar un ID d
 ### POST `/api/gym/bulk`
 Crea múltiples gimnasios en una sola solicitud. Formato del cuerpo:
 ```
-{
-    "name": "Elite Gym",
-    "address": "AV. Patria 45"
-},
-{
-    "name": "Iron Temple",
-    "address": "Vuelta de Rueda 12"
-},
-{
-    "name": "Flex Zone",
-    "address": "Paseo Del Rio 03"
-}
+[
+	{
+		"name": "Elite Gym",
+		"address": "AV. Patria 45"
+	},
+	{
+		"name": "Iron Temple",
+		"address": "Vuelta de Rueda 12"
+	},
+	{
+		"name": "Flex Zone",
+		"address": "Paseo Del Rio 03"
+	}
+]
 ```
 Los IDs se generará automáticamente, por lo que no es necesario ingresarlos desde el JSON.
 - Responses:
@@ -164,27 +166,29 @@ El ID se generará automáticamente, por lo que no es necesario ingresar un ID d
 ### POST `/api/coach/bulk`
 Crea múltiples entrenadores en una sola solicitud. Formato del cuerpo:
 ```
-{
-    "name": "Laura",
-    "lastName": "Garcia",
-    "mail": "laura@powerfitness.com",
-    "specialty": "Yoga",
-    "gymId": 1
-  },
-  {
-    "name": "Robert",
-    "lastName": "Johnson",
-    "mail": "robert@elitegym.com",
-    "specialty": "Boxeo",
-    "gymId": 2
-  },
-  {
-    "name": "Sophia",
-    "lastName": "Williams",
-    "mail": "sophia@elitegym.com",
-    "specialty": "Zumba",
-    "gymId": 3
-  }
+[
+	{
+		"name": "Laura",
+		"lastName": "Garcia",
+		"mail": "laura@powerfitness.com",
+		"specialty": "Yoga",
+		"gymId": 1
+	},
+	{
+		"name": "Robert",
+		"lastName": "Johnson",
+		"mail": "robert@elitegym.com",
+		"specialty": "Boxeo",
+		"gymId": 2
+	},
+	{
+		"name": "Sophia",
+		"lastName": "Williams",
+		"mail": "sophia@elitegym.com",
+		"specialty": "Zumba",
+		"gymId": 3
+	}
+]
 ```
 Los IDs se generará automáticamente, por lo que no es necesario ingresarlos desde el JSON, podemos ingresar en este JSON los gymId, para poder relacionar nuestros entrenadores a un gimnasio, o podemos hacerlo despues manualmente desde el metodo PUT.
 - Responses:
@@ -276,30 +280,32 @@ El ID se generará automáticamente, por lo que no es necesario ingresar un ID d
 ### POST `/api/user/bulk`
 Crea múltiples usuarios en una sola solicitud. Formato del cuerpo:
 ```
-{
-    "name": "David",
-    "lastName": "Gonzalez",
-    "mail": "davidgonzalez@example.com",
-    "coachId": 1
-  },
-  {
-    "name": "Isabel",
-    "lastName": "Rodriguez",
-    "mail": "isabel.rodriguez@example.com",
-    "coachId": 2
-  },
-  {
-    "name": "Juan",
-    "lastName": "Perez",
-    "mail": "juanperez@example.com",
-    "coachId": 3
-  },
-  {
-    "name": "Maria",
-    "lastName": "Sanchez",
-    "mail": "mariasanchez@example.com",
-    "coachId": 4
-  }
+[
+	{
+		"name": "David",
+		"lastName": "Gonzalez",
+		"mail": "davidgonzalez@example.com",
+		"coachId": 1
+	},
+	{
+		"name": "Isabel",
+		"lastName": "Rodriguez",
+		"mail": "isabel.rodriguez@example.com",
+		"coachId": 2
+	},
+	{
+		"name": "Juan",
+		"lastName": "Perez",
+		"mail": "juanperez@example.com",
+		"coachId": 3
+	},
+	{
+		"name": "Maria",
+		"lastName": "Sanchez",
+		"mail": "mariasanchez@example.com",
+		"coachId": 4
+	}
+]
 ```
 Los IDs se generará automáticamente, por lo que no es necesario ingresarlos desde el JSON, podemos ingresar en este JSON los coachId, para poder relacionar nuestros usuarios a un entrenador, o podemos hacerlo despues manualmente desde el metodo PUT.
 - Responses:
