@@ -31,7 +31,7 @@ Una API REST construida con Spring Boot 3 que implementa operaciones CRUD (Crear
 - **Lombok**: Reducción de código
 
 ## Endpoints de la API
-### Gimnasios (Gyms)
+Gimnasios (Gyms):
 
 ### GET `/api/gym`
 Devuelve una lista paginada en formato JSON de todos los gimnasios.
@@ -108,7 +108,7 @@ Elimina un gimnasio.
 	- `400 Bad Request` Si no existe el gimnasio con el ID especificado
 	- `200 OK` Gymnasio eliminado.
 
-### Entrenadores (Coaches)
+Entrenadores (Coaches):
 
 ### GET `/api/coach`
 Devuelve una lista paginada en formato JSON de todos los entrenadores.
@@ -223,7 +223,7 @@ Elimina un entrenador.
 	- `400 Bad Request` Si no existe el entrenador con el ID especificado.
 	- `200 OK` Entrenador eliminado.
 
-### Usuarios (Users)
+Usuarios (Users):
 
 ### GET `/api/user`:
 Devuelve una lista paginada en formato JSON de todos los usuarios.
