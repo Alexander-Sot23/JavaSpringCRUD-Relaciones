@@ -3,7 +3,7 @@
 [![Java](https://img.shields.io/badge/Java-17%2B-blue)](https://www.oracle.com/java/)
 [![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5.3-green)](https://spring.io/projects/spring-boot)
 [![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-orange)](https://www.mysql.com/)
-![JPA](https://img.shields.io/badge/JPA-Hibernate-purple)
+[![JPA](https://img.shields.io/badge/JPA-Hibernate-purple)](https://hibernate-org.translate.goog/orm/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc).
 
 Una API REST construida con Spring Boot 3 que implementa operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para gestionar gimnasios, entrenadores y usuarios con relaciones entre ellos.
 
