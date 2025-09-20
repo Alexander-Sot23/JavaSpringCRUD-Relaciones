@@ -358,9 +358,15 @@ cd JavaSpringCRUD-Relaciones
 ```
 2.	Configurar las propiedades de la aplicación en `application.properties`.
 ```
-spring.datasource.url=jdbc/:mysql://localhost:3306/tu_basedatos
+spring.application.name=JavaSpringCRUD-Relaciones
+#
+spring.datasource.url=jdbc:mysql://localhost:3306/tu_base_de_datos
 spring.datasource.username=tu_usuario
 spring.datasource.password=tu_contraseña
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#
+spring.jpa.database-platform=org.hibernate.dialect.MySQLDialect
+spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 ```
 3.	Construir y ejecutar la aplicación:
